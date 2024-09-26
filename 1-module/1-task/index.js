@@ -2,7 +2,6 @@
 
 function factorial(n) {
   if (n === 0 || n === 1) {
-    alert('Введите целое число больше 1');
     return 1;
   } else if (n > 1) {
     let cycle = 1;
@@ -17,7 +16,6 @@ function factorial(n) {
 
 function factorialReq(n) {
   if (n === 0 || n === 1) {
-    alert('Введите целое число больше 1');
     return 1;
   }
   return n * factorialReq(n - 1);
