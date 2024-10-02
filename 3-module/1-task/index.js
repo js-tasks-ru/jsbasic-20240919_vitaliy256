@@ -3,9 +3,7 @@ function namify(users) {
 }
 
 // Дополнительное задание из вебинара .reduce();
-// Без комментов тесты не проходит
 
-/*
 let users =
   [
     {
@@ -38,5 +36,4 @@ let females = users.reduce((accumulator, user) => {
   return accumulator;
 }, []).join('\n');
 
- console.log(females);
-*/
+console.log(females);
