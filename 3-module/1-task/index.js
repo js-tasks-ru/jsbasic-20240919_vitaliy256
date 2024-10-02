@@ -3,8 +3,6 @@ function namify(users) {
 }
 
 // Дополнительное задание из вебинара .reduce();
-// Без комментов не проходит тесты, в песочнице код работает
-
 /*
 let users =
   [
@@ -32,7 +30,7 @@ let users =
 
 let females = users.reduce((accumulator, user) => {
   if (user.gender === 'f') {
-    accumulator += `${user.firstName} ${user.lastName} `;
+    accumulator.push(`${user.firstName} ${user.lastName}`);
   }
 
   return accumulator;
