@@ -3,7 +3,7 @@ function makeFriendsList(friends) {
 
   for (let friend of friends) {
 
-    friendsList.insertAdjacentHTML('beforeEnd', `<li> ${friend.firstName} ${friend.lastName} </li>`);
+    friendsList.insertAdjacentHTML('beforeEnd', `<li>${friend.firstName} ${friend.lastName}</li>`);
   }
 
   return friendsList;
