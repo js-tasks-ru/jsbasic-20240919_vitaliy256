@@ -7,3 +7,5 @@ function makeDiagonalRed(table) {
     row.cells[i].style.backgroundColor = 'red';
   }
 }
+
+// К сожалению, случайно нажал показать решение...
