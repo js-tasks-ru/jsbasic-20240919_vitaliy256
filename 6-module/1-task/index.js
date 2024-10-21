@@ -39,6 +39,7 @@ export default class UserTable {
       tr.appendChild(destroy);
       tbody.appendChild(tr);
     });
+
     return tbody;
   }
 
