@@ -1,4 +1,5 @@
 import createElement from '../../assets/lib/create-element.js';
+
 export default class StepSlider {
   constructor({steps, value = 0}) {
     this.value = value;
@@ -26,14 +27,6 @@ export default class StepSlider {
         </div>
       </div>`);
   };
-
-  change = () => {
-    const slider = new CustomEvent('slider-change', {
-      bubbles: true,
-      detail: this.value
-    });
-    this.elem.dispatchEvent(slider);
-  }
 
   computed = leftRelative => {
     const segments = this.steps - 1;
@@ -87,4 +80,12 @@ export default class StepSlider {
     document.addEventListener('pointermove', move);
     document.addEventListener('pointerup', up);
   };
+
+  change = () => {
+    const slider = new CustomEvent('slider-change', {
+      bubbles: true,
+      detail: this.value
+    });
+    this.elem.dispatchEvent(slider);
+  }
 }
